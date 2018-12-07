@@ -1,1 +1,31 @@
-.full-display-bg {background-color: rgb(0, 61, 129);}
+<style type="text/css">
+  .full-display-bg 
+	  {
+	    background: url('https://www.ciicvisa.com/_mz/editor/attached/image/20181207/20181207165049_70309.jpg');
+	    background-repeat: repeat;
+	    background-size:1903px 1431px;
+	  }
+  .vkcontent 
+	  {
+		margin:0px 100px;
+		padding:50px;
+		border-radius:15px;
+		background-color:white;
+		/* for IE */
+		filter:alpha(opacity=8);
+		/* CSS3 standard */
+		opacity:0.8;
+	  }
+  .vkcontent p
+	  {
+		color:#003e78;
+		font-family:'Microsoft YaHei';
+		font-size:20px;
+		font-weight: 500;
+		line-height:40px;
+	  }
+   .vkcontent p span
+	  {
+		font-weight: 700
+	  }
+</style>
