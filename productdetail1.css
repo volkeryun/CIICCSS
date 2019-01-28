@@ -1,0 +1,20 @@
+<style type="text/css">
+    .vktabl1td1 {
+        border-right: solid 1px #F0F0F0;
+        border-bottom: solid 1px #F0F0F0;
+    }
+    .vktabl2td1 {
+        border-right: solid 1px #F0F0F0;
+        padding-top:10px;
+    }
+    .vktabl2td2 {
+        border-top: solid 1px #F0F0F0;
+        padding-top:10px;
+    }
+    .vkspanbsinfo {
+        color:black;
+        font-weight: bold;
+        line-height:40px;
+        font-size: 18px;
+    }
+</style>
