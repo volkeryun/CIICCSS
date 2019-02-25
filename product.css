@@ -1,9 +1,7 @@
 /*-------------------------签证基本信息-------------------------*/
 table.vktab{
-    border-collapse:collapse;
-    text-align:center;
-    width:100%;
-    color:#ccc;
+    width:100%; border-collapse:collapse;
+    color:#ccc; text-align:center;
 }
 table.vktab tr:first-child {
     border-bottom: solid 1px #F0F0F0;
@@ -12,48 +10,65 @@ table.vktab tr + tr td {
     padding-top: 10px;
 }
 table.vktab td + td {
-    border-left: solid 1px #F0F0F0;
-    width: 33%;
+    width: 33%; border-left: solid 1px #F0F0F0;
 }
 table.vktab p {
     color:black; font-size:18px; font-weight:bold; line-height:40px;
 }
-
+/*-------------------------注意事项-------------------------*/
+.vkvisaintro {}
+.vkvisaintro img {
+    display: block; width: 30%; margin-left: 40px; margin-top: 20px; margin-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.5s linear;
+}
+.vkvisaintro img:hover{
+    transform: scale(1.05);
+}
+.vkvisaintro h1 {
+    color: red; background-color: #f0f0f0; font-size: 24px; line-height: 48px; text-align: center;
+}
+.vkvisaintro ul {
+    margin-left: 40px;
+    line-height: 30px;
+}
+@media screen and (max-width: 1262px) {
+.vkvisaintro img {
+    width: 80%; margin-top: 10px;
+}
+.vkvisaintro ul {
+    margin-left: 0;
+    line-height: 25px;
+}
+.vkvisaintro ul li{
+    margin-bottom: 10px;
+}
 /*-------------------------流程-------------------------*/
 div.vkstep {
     counter-reset:vknumber;
 }
 div.vkstep > div {
-    position: relative;
-    width: 80%;
-    background: linear-gradient(to right, #F5F5F5, #87CEFA);
+    position: relative; width: 80%; margin: 30px 10% 20px 5%;
     border-top-right-radius: 10px; border-bottom-right-radius: 10px;
-    margin: 30px 10% 20px 5%;
+    background: linear-gradient(to right, #F5F5F5, #87CEFA);
 }
 .vkstep h1 {
-    position: absolute; left: 20px; top: -15px;
-    width: 140px;
-    color: black; font-size: 18px; font-weight: bold; line-height: 30px;
-    margin: 0; padding: 0;
-    background-color: #fbd0d0;
+    position: absolute; left: 20px; top: -15px; width: 140px; margin: 0; padding: 0;
     border-top-right-radius: 15px; border-bottom-right-radius: 15px;
+    color: black; background-color: #fbd0d0; font-size: 18px; font-weight: bold; line-height: 30px;
 }
 .vkstep h1::before {
-    position: absolute; left: -30px; 
-    width: 30px; height: 30px;
-    padding-left: 7px;
-    color: black; font-size: 18px; font-weight: bold; line-height: 30px; text-align: center;
-    background-color: #fbd0d0;
+    position: absolute; left: -30px; width: 30px; height: 30px; padding-left: 7px;
     border-top-left-radius: 15px; border-bottom-left-radius: 15px;
+    color: black; background-color: #fbd0d0; font-size: 18px; font-weight: bold; line-height: 30px; text-align: center;
     counter-increment:vknumber;
     content:" " counter(vknumber) ".";
 }
 .vkstep ul {
-    color: black; font-size: 14px; line-height: 20px;
     padding: 20px 10px 15px 40px;
+    color: black; font-size: 14px; line-height: 20px;
 }
 @media screen and (max-width: 1262px) {
 div.vkstep > div {
-    width: 90%;
-    margin: 30px 10px 10px 20px;
+    width: 90%; margin: 30px 10px 10px 20px;
 }
