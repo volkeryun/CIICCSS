@@ -44,10 +44,10 @@ table.vktab p {
     margin-bottom: 10px;
 }
 /*-------------------------流程-------------------------*/
-div.vkstep {
+.vkstep {
     counter-reset:vknumber;
 }
-div.vkstep > div {
+.vkstep > div {
     position: relative; width: 80%; margin: 30px 10% 20px 5%;
     border-top-right-radius: 10px; border-bottom-right-radius: 10px;
     background: linear-gradient(to right, #F5F5F5, #87CEFA);
