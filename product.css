@@ -46,7 +46,7 @@ table.vktab p {
 }
 /*-------------------------流程-------------------------*/
 .vkstep, .vknotice {
-    border:solid 1px #ffffff;
+    border:solid 1px #f0f0f0;
     counter-reset:vknumber;
 }
 .vkstep {
