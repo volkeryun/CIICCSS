@@ -25,7 +25,7 @@ table.vktab p {
 .vkvisaintro img:hover{
     transform: scale(1.05);
 }
-.vkvisaintro h1, .vknotice h1 {
+.vkvisaintro h1, .vkstep h1, .vknotice h1 {
     color: #2f93de; background-color: #f0f0f0; font-size: 24px; line-height: 48px; text-align: center;
 }
 .vkvisaintro ul {
@@ -76,5 +76,29 @@ table.vktab p {
 @media screen and (max-width: 1262px) {
     div.vkstep > div {
         width: 90%; margin: 30px 10px 10px 20px;
+    }
+}
+/*-------------------------须知-------------------------*/
+.vknotice {}
+.vknotice h1 {
+    margin-top: 0;
+}
+.vknotice ol {
+    margin: 10px 20px;
+    line-height: 30px;
+    list-style: decimal outside none;
+}
+.vknotice img {
+    display: block;
+    width:90%;
+    margin: 10px auto;
+}
+@media screen and (max-width: 1262px) {
+    .vknotice ol {
+        margin-left: 0;
+        line-height: 25px;
+    }
+    .vknotice ol li{
+        margin-bottom: 10px;
     }
 }
