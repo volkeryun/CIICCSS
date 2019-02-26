@@ -25,7 +25,7 @@ table.vktab p {
 .vkvisaintro img:hover{
     transform: scale(1.05);
 }
-.vkvisaintro h1 {
+.vkvisaintro h1, .vknotice h1 {
     color: red; background-color: #f0f0f0; font-size: 24px; line-height: 48px; text-align: center;
 }
 .vkvisaintro ul {
@@ -45,8 +45,11 @@ table.vktab p {
     }
 }
 /*-------------------------流程-------------------------*/
-.vkstep {
+.vkstep, .vknotice {
     border:solid 1px #ffffff;
+    counter-reset:vknumber;
+}
+.vkstep {
     counter-reset:vknumber;
 }
 .vkstep > div {
