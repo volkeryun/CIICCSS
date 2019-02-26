@@ -57,12 +57,12 @@ table.vktab p {
     border-top-right-radius: 10px; border-bottom-right-radius: 10px;
     background: linear-gradient(to right, #F5F5F5, #87CEFA);
 }
-.vkstep h1 {
+.vkstep h3 {
     position: absolute; left: 20px; top: -15px; width: 140px; margin: 0; padding: 0;
     border-top-right-radius: 15px; border-bottom-right-radius: 15px;
     color: black; background-color: #fbd0d0; font-size: 18px; font-weight: bold; line-height: 30px;
 }
-.vkstep h1::before {
+.vkstep h3::before {
     position: absolute; left: -30px; width: 30px; height: 30px; padding-left: 7px;
     border-top-left-radius: 15px; border-bottom-left-radius: 15px;
     color: black; background-color: #fbd0d0; font-size: 18px; font-weight: bold; line-height: 30px; text-align: center;
