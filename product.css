@@ -33,23 +33,23 @@ table.vktab p {
     line-height: 30px;
 }
 @media screen and (max-width: 1262px) {
-.vkvisaintro img {
-    width: 80%; margin-top: 10px;
-}
-.vkvisaintro ul {
-    margin-left: 0;
-    line-height: 25px;
-}
-.vkvisaintro ul li{
-    margin-bottom: 10px;
-}
+    .vkvisaintro img {
+        width: 80%; margin-top: 10px;
+    }
+    .vkvisaintro ul {
+        margin-left: 0;
+        line-height: 25px;
+    }
+    .vkvisaintro ul li{
+        margin-bottom: 10px;
+    }
 }
 /*-------------------------流程-------------------------*/
 .vkstep {
     counter-reset:vknumber;
 }
 .vkstep > div {
-    position: relative; width: 80%; margin: 30px 10% 20px 5%;
+    position: relative; width: 80%; margin: 30px 9% 20px 10%;
     border-top-right-radius: 10px; border-bottom-right-radius: 10px;
     background: linear-gradient(to right, #F5F5F5, #87CEFA);
 }
@@ -70,7 +70,7 @@ table.vktab p {
     color: black; font-size: 14px; line-height: 20px;
 }
 @media screen and (max-width: 1262px) {
-div.vkstep > div {
-    width: 90%; margin: 30px 10px 10px 20px;
-}
+    div.vkstep > div {
+        width: 90%; margin: 30px 10px 10px 20px;
+    }
 }
