@@ -16,9 +16,7 @@ table.vktab p {
     color:black; font-size:18px; font-weight:bold; line-height:40px;
 }
 /*-------------------------注意事项-------------------------*/
-.vkvisaintro {
-    border:solid 1px #ffffff;
-}
+.vkvisaintro {}
 .vkvisaintro img {
     display: block; width: 30%; margin-left: 40px; margin-top: 20px; margin-bottom: 20px;
     border-radius: 10px;
@@ -48,6 +46,7 @@ table.vktab p {
 }
 /*-------------------------流程-------------------------*/
 .vkstep {
+    border:solid 1px #ffffff;
     counter-reset:vknumber;
 }
 .vkstep > div {
