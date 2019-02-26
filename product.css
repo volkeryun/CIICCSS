@@ -1,0 +1,100 @@
+/*-------------------------签证基本信息-------------------------*/
+table.vktab{
+    width:100%; border-collapse:collapse;
+    color:#ccc; text-align:center;
+}
+table.vktab tr:first-child {
+    border-bottom: solid 1px #F0F0F0;
+}
+table.vktab tr + tr td {
+    padding-top: 10px;
+}
+table.vktab td + td {
+    width: 33%; border-left: solid 1px #F0F0F0;
+}
+table.vktab p {
+    color:black; font-size:18px; font-weight:bold; line-height:40px;
+}
+/*-------------------------注意事项-------------------------*/
+.vkvisaintro {}
+.vkvisaintro img {
+    display: block; width: 30%; margin-left: 40px; margin-top: 20px; margin-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.5s linear;
+}
+.vkvisaintro img:hover{
+    transform: scale(1.05);
+}
+.vkvisaintro h1, .vkstep h1, .vknotice h1 {
+    color: #2f93de; background-color: #f0f0f0; font-size: 24px; line-height: 48px; text-align: center; margin-top: 0;
+}
+.vkvisaintro ul {
+    margin-left: 40px;
+    line-height: 30px;
+}
+@media screen and (max-width: 1262px) {
+    .vkvisaintro img {
+        width: 80%; margin-top: 10px;
+    }
+    .vkvisaintro ul {
+        margin-left: 0;
+        line-height: 25px;
+    }
+    .vkvisaintro ul li{
+        margin-bottom: 10px;
+    }
+}
+/*-------------------------流程-------------------------*/
+.vkstep, .vknotice {
+    border:solid 1px #f0f0f0;
+}
+.vkstep {
+    counter-reset:vknumber;
+}
+.vkstep > div {
+    position: relative; width: 80%; margin: 30px 9% 20px 10%;
+    border-top-right-radius: 10px; border-bottom-right-radius: 10px;
+    background: linear-gradient(to right, #F5F5F5, #87CEFA);
+}
+.vkstep h3 {
+    position: absolute; left: 20px; top: -15px; width: 140px; margin: 0; padding: 0;
+    border-top-right-radius: 15px; border-bottom-right-radius: 15px;
+    color: black; background-color: #fbd0d0; font-size: 18px; font-weight: bold; line-height: 30px;
+}
+.vkstep h3::before {
+    position: absolute; left: -30px; width: 30px; height: 30px; padding-left: 7px;
+    border-top-left-radius: 15px; border-bottom-left-radius: 15px;
+    color: black; background-color: #fbd0d0; font-size: 18px; font-weight: bold; line-height: 30px; text-align: center;
+    counter-increment:vknumber;
+    content:" " counter(vknumber) ".";
+}
+.vkstep ul {
+    padding: 20px 10px 15px 40px;
+    color: black; font-size: 14px; line-height: 20px;
+}
+@media screen and (max-width: 1262px) {
+    div.vkstep > div {
+        width: 90%; margin: 30px 10px 10px 20px;
+    }
+}
+/*-------------------------须知-------------------------*/
+.vknotice {}
+.vknotice ol {
+    margin: 10px 20px;
+    line-height: 30px;
+    list-style: decimal outside none;
+}
+.vknotice img {
+    display: block;
+    width:90%;
+    margin: 10px auto;
+}
+@media screen and (max-width: 1262px) {
+    .vknotice ol {
+        margin-left: 0;
+        line-height: 25px;
+    }
+    .vknotice ol li{
+        margin-bottom: 10px;
+    }
+}
